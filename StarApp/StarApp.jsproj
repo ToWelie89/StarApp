@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>540c2642-35f9-4270-ac0a-316377965427</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>StarApp_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>2B4D0798D687CF75B1FB8D3B9891CC603536B7AB</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-180.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-80.png" />
+    <Content Include="default.html" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\appbackground.png" />
+    <Content Include="images\blankavatar.png" />
+    <Content Include="images\exit.png" />
+    <Content Include="images\leagues\bronze.png" />
+    <Content Include="images\leagues\bronzeTop25.png" />
+    <Content Include="images\leagues\bronzeTop50.png" />
+    <Content Include="images\leagues\bronzeTop8.png" />
+    <Content Include="images\leagues\diamond.png" />
+    <Content Include="images\leagues\diamondTop25.png" />
+    <Content Include="images\leagues\diamondTop50.png" />
+    <Content Include="images\leagues\diamondTop8.png" />
+    <Content Include="images\leagues\gold.png" />
+    <Content Include="images\leagues\goldTop25.png" />
+    <Content Include="images\leagues\goldTop50.png" />
+    <Content Include="images\leagues\goldTop8.png" />
+    <Content Include="images\leagues\grandmaster.png" />
+    <Content Include="images\leagues\grandmasterTop25.png" />
+    <Content Include="images\leagues\grandmasterTop50.png" />
+    <Content Include="images\leagues\grandmasterTop8.png" />
+    <Content Include="images\leagues\master.png" />
+    <Content Include="images\leagues\masterTop25.png" />
+    <Content Include="images\leagues\masterTop50.png" />
+    <Content Include="images\leagues\masterTop8.png" />
+    <Content Include="images\leagues\platinum.png" />
+    <Content Include="images\leagues\platinumTop25.png" />
+    <Content Include="images\leagues\platinumTop50.png" />
+    <Content Include="images\leagues\platinumTop8.png" />
+    <Content Include="images\leagues\silver.png" />
+    <Content Include="images\leagues\silverTop25.png" />
+    <Content Include="images\leagues\silverTop50.png" />
+    <Content Include="images\leagues\silverTop8.png" />
+    <Content Include="images\mapThumbnails\1v1\AkilonWastes.jpg" />
+    <Content Include="images\mapThumbnails\1v1\AlterzimStrongholdTE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\BelshirVestigeLE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\DerelichtWatcherTE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\FrostLE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\PolarNight.jpg" />
+    <Content Include="images\mapThumbnails\1v1\StarStationTE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\WhirlwindLE.jpg" />
+    <Content Include="images\mapThumbnails\1v1\YeonsuLE.jpg" />
+    <Content Include="images\mapThumbnails\2v2\GeosyncQuarry.jpg" />
+    <Content Include="images\mapThumbnails\2v2\GraystoneRavine.jpg" />
+    <Content Include="images\mapThumbnails\2v2\HuntingGround.jpg" />
+    <Content Include="images\mapThumbnails\2v2\IsleOfSlaughter.jpg" />
+    <Content Include="images\mapThumbnails\2v2\Reclamation.jpg" />
+    <Content Include="images\mapThumbnails\2v2\Reflection.jpg" />
+    <Content Include="images\mapThumbnails\2v2\ResupplyTanker.jpg" />
+    <Content Include="images\mapThumbnails\2v2\TheBoneTrench.jpg" />
+    <Content Include="images\mapThumbnails\3v3\GreenAcres.jpg" />
+    <Content Include="images\mapThumbnails\3v3\QueensNest.jpg" />
+    <Content Include="images\mapThumbnails\3v3\ResearchComplex.jpg" />
+    <Content Include="images\mapThumbnails\3v3\SandsStrife.jpg" />
+    <Content Include="images\mapThumbnails\3v3\ShadowReactor.jpg" />
+    <Content Include="images\mapThumbnails\3v3\SilentDunes.jpg" />
+    <Content Include="images\mapThumbnails\3v3\TempleOfThePreservers.jpg" />
+    <Content Include="images\mapThumbnails\3v3\VaultOfSecrets.jpg" />
+    <Content Include="images\mapThumbnails\4v4\AtlasStation.jpg" />
+    <Content Include="images\mapThumbnails\4v4\CelestialBastion.jpg" />
+    <Content Include="images\mapThumbnails\4v4\DeadlockRidge.jpg" />
+    <Content Include="images\mapThumbnails\4v4\FalloutZone.jpg" />
+    <Content Include="images\mapThumbnails\4v4\FossilQuarry.jpg" />
+    <Content Include="images\mapThumbnails\4v4\PrimordialGrave.jpg" />
+    <Content Include="images\mapThumbnails\4v4\VolcanicRidge.jpg" />
+    <Content Include="images\mapThumbnails\4v4\WrithingMorass.jpg" />
+    <Content Include="images\mapThumbnails\Empty.png" />
+    <Content Include="images\mapThumbnails\FFA\Abyss.jpg" />
+    <Content Include="images\mapThumbnails\FFA\FracturedGlacier.jpg" />
+    <Content Include="images\mapThumbnails\FFA\KorhalCity.jpg" />
+    <Content Include="images\mapThumbnails\FFA\Quicksand.jpg" />
+    <Content Include="images\mapThumbnails\FFA\StarStation.jpg" />
+    <Content Include="images\mapThumbnails\FFA\TectonicRift.jpg" />
+    <Content Include="images\racesymbols\protosslogo.gif" />
+    <Content Include="images\racesymbols\randomlogo.gif" />
+    <Content Include="images\racesymbols\terranlogo.gif" />
+    <Content Include="images\racesymbols\zerglogo.gif" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\generalscripts.js" />
+    <Content Include="js\jquery-2.0.3.js" />
+    <Content Include="js\jsonData.js" />
+    <Content Include="js\ladderscripts.js" />
+    <Content Include="js\linq.js" />
+    <Content Include="js\livetile.js" />
+    <Content Include="js\loadData.js" />
+    <Content Include="js\profilescripts.js" />
+    <None Include="StarApp_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="StarApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

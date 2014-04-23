@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="17031ToWelie89.StarManager" Version="1.0.0.8" Publisher="CN=E87AF89F-199C-418E-B453-077E9D4504BB" />
+  <Properties>
+    <DisplayName>Star Manager</DisplayName>
+    <PublisherDisplayName>ToWelie89</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Star Manager" SmallLogo="Assets\SmallLogo.png" Description="Star Manager is a Starcraft 2 app for Windows 8. It is used to view ladder statistics, match history and also shows a feed of your current positions in the metro layout." ForegroundText="light" BackgroundColor="#92278f" Logo="Assets\Logo.png">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" ShortName="StarManager" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#92278f" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,432 @@
+﻿body {
+    
+}
+
+img#backgroundImage {
+    position: absolute;
+    bottom: -60px;
+    left: -20px;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+div#ladderInfoWrapper {
+    display: table;
+    height: 100%;
+    position: absolute;
+    left: -550px;
+}
+
+div#ladderInfoWrapper2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div#laderInfo {
+    padding: 25px;
+    width: 480px;
+    height: 450px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: -ms-linear-gradient(top, rgba(169,3,152,1) 0%,rgba(144,2,130,1) 44%,rgba(110,0,99,1) 100%);
+    box-shadow: 10px 10px 20px 2px #000000;
+    border-right: 2px solid #d86fca;
+    border-top: 2px solid #d86fca;
+    border-bottom: 2px solid #d86fca;
+    text-align: left;
+}
+
+div#lodingIndicatorWrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 430px;
+    display: table;
+    margin-top: -430px;
+    text-align: center;
+    visibility: hidden;
+}
+
+div#loadingIndicatorWrapper2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#ladderInfoContent {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 430px;
+    overflow-y: auto;
+    -ms-overflow-style: scrollbar;
+    text-align: left;
+}
+
+.ladderInfoRow {
+    clear: left;
+}
+
+#ladderInfoTopRow {
+    margin-bottom: 30px;
+}
+
+.ladderInfoColumn {
+    float: left;
+    border: 1px solid white;
+    text-align: center;
+    height: inherit;
+}
+
+    .ladderInfoColumn p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #ladderListRaceSymbol {
+        margin-bottom: -5px;
+    }
+
+.ladderInfoTopColumn {
+    background-color: black;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.ladderInfoRank {
+    width: 35px;
+}
+
+.ladderInfoPlayers {
+    width: 270px;
+}
+
+.ladderInfoPoints {
+    width: 50px;
+}
+
+.ladderInfoWins {
+    width: 45px;
+}
+
+.ladderInfoLosses {
+    width: 45px;
+}
+
+.ladderOption {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    float: left;
+    color: #5124b6;
+    font-size: 12px;
+    border: 2px solid red;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+
+.ladderOption:hover {
+    color: #a17df2;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.myProfile {
+    background: -ms-linear-gradient(top, rgba(38,96,13,1) 0%,rgba(53,241,66,1) 100%);
+}
+    .myProfile:hover {
+        background: -ms-linear-gradient(top, rgba(60,160,40,1) 0%,rgba(70,255,80,1) 100%);
+    }
+
+div#tooltip {
+    background: -ms-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* IE10+ */
+    box-shadow: 3px 3px 20px 2px #000000;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    border-radius: 4px;
+}
+
+div.greenBar {
+    background: -ms-linear-gradient(top, rgba(34,139,34,1) 0%,rgba(180,219,54,1) 100%); /* IE10+ */
+}
+
+div.redBar {
+    background: -ms-linear-gradient(top, rgba(128,0,0,1) 0%,rgba(224,18,0,1) 100%); /* IE10+ */
+}
+
+div#main {
+    background: -ms-linear-gradient(top,  rgba(72,61,139,1) 0%,rgba(92,86,135,1) 100%); /* IE10+ */
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    position: relative;
+    z-index: -5;
+}
+
+div#noProfile {
+    width: 800px;
+    background: -ms-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* IE10+ */
+    box-shadow: 3px 3px 20px 2px #000000;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#noProfile p {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+div#container {
+    width: 800px;
+    background: -ms-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* IE10+ */
+    box-shadow: 10px 10px 20px 2px #000000;
+    border-bottom: 3px dashed black;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+div#stats {
+    width: 800px;
+    background: rgb(184,198,223); /* Old browsers */
+    background: -ms-linear-gradient(top,  rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%); /* IE10+ */
+    height: 450px;
+    box-shadow: 10px 10px 20px 2px #000000;
+    position: relative;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.row {
+    clear: left;
+}
+
+.leagueColumn {
+    float: left;
+    width: 135px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+    .leagueColumn p {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+.ladderColumn {
+    float: left;
+    margin-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+    
+    .ladderColumn p {
+        font-size: 18px;
+        margin-top: 17px;
+        margin-bottom: 0px;
+    }
+
+#leagueTable {
+    float: left;
+}
+
+#rightBarStats {
+    float: right;
+    width: auto;
+    height: 100%;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+#statsTable {
+    margin-top: 10px;
+}
+
+.statsRow {
+    clear: left;
+}
+
+#statsTable2 {
+    margin-top: 20px;
+}
+
+    #rightBarStats p {
+        margin-bottom: 3px;
+        margin-top: 0px;
+    }
+
+    .statsLeagueSymbol {
+        margin-bottom: 0px;
+        width: 45px;
+        height: 47px;
+    }
+
+    .hoverLeagueSymbol:hover {
+        cursor: pointer;
+    }
+
+.statsColumn1 {
+    float: left;
+    width: 130px;
+    text-align: left;
+}
+
+    .statsColumnText {
+        padding: 0px;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+.statsColumn2 {
+    float: left;
+    width: 40px;
+    text-align: right;
+}
+
+#matchHistory {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.match:hover {
+    cursor: pointer;
+}
+
+div#portraitContainer {
+    float: left;
+    margin-left: 5px;
+}
+
+#rankBox {
+    position: absolute;
+    background-color: black;
+    z-index: 5;
+    margin-top: 82px;
+    margin-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+    #rankBox:hover {
+        border: 2px solid darkred;
+    }
+
+#portrait {
+    height: 90px;
+    width: 90px;
+    padding: 0px;
+    margin: 10px;
+    background-image: url(../images/blankavatar.png);
+    background-size: contain;
+    border-radius: 4px;
+    float: left;
+    border: 2px solid white;
+}
+    #portrait:hover {
+        border: 2px solid darkred;
+    }
+
+div#character {
+    float: left;
+    margin-right: 100px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+div#achievement {
+    float: right;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+    p#charName {
+        font-size: 22px;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+    p#clanName {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+    }
+
+    #raceSymbol {
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        margin-right: 4px;
+        margin-top: 2px;
+    }
+
+    p#achievementPoints {
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    a#changeProfile {
+        color: #5124b6;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+
+    a#changeProfile:hover {
+        color: #a17df2;
+        cursor: pointer;
+    }
+
+#profileTextArea {
+    width: 500px;
+}
+
+.cross {
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/exit.png);
+    background-size: contain;
+}
+
+    .cross:hover {
+        opacity: 0.4;
+        cursor: pointer;
+    }
+
+#ladderInfoCross {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
