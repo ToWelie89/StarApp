@@ -1,1 +1,3 @@
 /model/secret.php
+/model/generateToken.sh
+/model/response.json

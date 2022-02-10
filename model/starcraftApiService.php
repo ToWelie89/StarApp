@@ -1,5 +1,9 @@
 <?php
     include("secret.php");
+    $strJsonFileContents = file_get_contents("response.json");
+    $array = json_decode($strJsonFileContents, true);
+
+    $accessToken = $array["access_token"];
 
     function getRegion($regionId) {
         if ($regionId == '1') {
