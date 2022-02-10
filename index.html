@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>StarApp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="./css/default.css" rel="stylesheet" />
+    <script src="./js/jquery-2.0.3.js"></script>
+    <script src="./js/helperFunctions.js"></script>
+    <script src="./js/loadData.js" defer></script>
+    <script src="./js/ladderscripts.js" defer></script>
+</head>
+    <body>
+        <div id="ladderInfoWrapper">
+            <div id="ladderInfoWrapper2">
+                <div class="cross" id="ladderInfoCross">
+                </div>
+                <div id="laderInfo">
+                    <div id="ladderInfoTeamOptions"></div>
+                    <div id="ladderInfoContent"></div>
+                    <div id="lodingIndicatorWrapper">
+                        <div id="loadingIndicatorWrapper2">
+                            <img id="lodingIndicator" src="./images/ajax-loader.gif"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="noProfile">
+                <div class="cross" id="noProfileCross">
+                </div>
+                Please enter a valid URL to a StarCraft 2 profile.<br/>
+                <form action="javascript:void(0);">
+                    <input type="text" id="profileTextArea" style="margin-right: 5px;" tabindex="1"/>
+                    <div id="rememberProfileContainer">
+                        <input id="rememberProfile" name="checkbox" type="checkbox" tabindex="2"/>
+                        <p>Remember Profile</p>
+                    </div>
+                    <input id="profileSubmitButton" type="submit" value="Submit" tabindex="3"/>
+                </form>
+            </div>
+            <div id="container">
+                <div id="portraitContainer">
+                    <div id="rankBox"></div>
+                    <div id="portrait">
+                    </div>
+                </div>
+                <div id="character">
+                    <img id="raceSymbol" /><p id="charName"></p>
+                    <p id="clanName"></p>
+                    <a id="changeProfile"></a>
+                </div>
+                <div id="achievement">
+                    <p id="achievementPoints"></p>
+                </div>
+            </div>
+            <div id="stats">
+                <div id="marineLoader">
+                    <div id="marineLoaderInner">
+                        <p>
+                            LOADING
+                            <span id="loadingSteps">
+                                <span id="loadingStep1">Fetching profile</span>
+                                <span class="divider">|</span>
+                                <span id="loadingStep2">Fetching ladder data</span>
+                                <span class="divider">|</span>
+                                <span id="loadingStep3">Fetching match data</span>
+                            </span>
+                        </p>
+                        <div id="marineLoaderInnerInner">
+                            <img src="images/marineLoader.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="statsData">
+                    <div id="leaguesAndStats">
+                        <div id="leagueTable">
+                            <div class="row">
+                                <div class="leagueColumn">
+                                    <p>
+                                        1v1<br/>
+                                        <img id="soloLeague" class="statsLeagueSymbol hoverLeagueSymbol"/>
+                                    </p>
+                                </div>
+                                <div class="ladderColumn" id="ladderColumn1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="leagueColumn">
+                                    <p>
+                                        2v2<br/>
+                                        <img id="twosLeague" class="statsLeagueSymbol hoverLeagueSymbol"/>
+                                    </p>
+                                </div>
+                                <div class="ladderColumn" id="ladderColumn2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="leagueColumn">
+                                    <p>
+                                        3v3<br/>
+                                        <img id="threesLeague" class="statsLeagueSymbol hoverLeagueSymbol"/>
+                                    </p>
+                                </div>
+                                <div class="ladderColumn" id="ladderColumn3">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="leagueColumn">
+                                    <p>
+                                        4v4<br/>
+                                        <img id="foursLeague" class="statsLeagueSymbol hoverLeagueSymbol"/>
+                                    </p>
+                                </div>
+                                <div class="ladderColumn" id="ladderColumn4">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rightBarStats">
+                            <p id="bestSoloLeagueText">Best 1v1 League</p>
+                            <img src="" class="statsLeagueSymbol" id="bestSoloLeague"/>
+                            <p id="bestTeamLeagueText">Best Team League</p>
+                            <img src="" class="statsLeagueSymbol" id="bestTeamLeague"/>
+                            
+                            <div id="statsTable">
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Total Games Played
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2" id="Div1">
+                                        <p class="statsColumnText" id="totalWins">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Games This Season
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="totalGamesThisSeasons">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow" style="margin-top: 30px;">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Zerg Wins
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="zergWins">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Terran Wins
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="terranWins">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Protoss Wins
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="protossWins">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                
+                                <div class="statsRow" style="margin-top: 30px;">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Zerg Rank
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="zergRank">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Terran Rank
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="terranRank">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                                <div class="statsRow">
+                                    <div class="statsColumn1">
+                                        <p class="statsColumnText">
+                                            Protoss Rank
+                                        </p>
+                                    </div>
+                                    <div class="statsColumn2">
+                                        <p class="statsColumnText" id="protossRank">
+                                            0
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="matchHistory">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tooltip">
+        </div>
+        <img id="backgroundImage" src="./images/appbackground.png" width="360" />
+    </body>
+</html>
